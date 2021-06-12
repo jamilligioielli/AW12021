@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5</title>
+    <style>
+        input, label{
+            display: block;
+            margin: 5px 0;
+        }
+        fieldset{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="GET" target="_top">
+        <button type="button" onclick="alert('aloalo marciano')">
+            Aperte Aqui 
+        </button>
+
+        <label for="idAvatar"></label>
+            <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZvzxR758FEpOT_8c18de1ye5lbBspbj9fFQ&usqp=CAU" alt="avatar" name="avatar" id="idAvatar">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="idMail">E-mail</label>
+            <input type="email" name="mail" id="idMail" required="required" autofocus>
+            <label for="idCor">Qual é sua cor favorita?</label>
+            <input type="color" name="cor" id="idCor" disabled>
+            <label for="idIdade">Quando você nasceu?</label>
+            <input type="date" name="idade" id="idIdade">
+            <input type="text" name="alo" id="idAlo" value="Feliz dia dos namorados!" readonly>
+        </fieldset>
+        <label for="idFile"> Adicione aqui algum texto legal:</label>
+            <input type="file" name="file" id="idFile" >
+
+        <label for="idLivros">Gênero litériario favorito</label>
+        <select name="livros" id="idLivros">
+            <option value="fantasia"> Fantasia </option>
+            <option value="romance"> Romance</option>
+            <option value="suspense"> Suspense</option>
+            <option value="emocao"> Os que emocionam</option>
+        </select>
+        
+        <label for="idMensagem">Me conte um pouco sobre você</label>
+        <textarea name="message" id="idMensagem" cols="20" rows="5" size = 50></textarea>
+        
+        <label for="browsers">Qual navegador você acha mais legal?</label>
+            <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Edge"> Substituiu o falecido Internet Explorer </option>
+            <option value="Firefox"> Igual ao Chrome, mas mais legal </option>
+            <option value="Chrome"> Dê adeus à sua memória RAM</option>
+            <option value="Opera">  O melhor é o GX</option>
+            <option value="Safari"> É da Apple </option>
+        </datalist>
+
+
+        <input type="reset" value="Apagar tudo">
+        <input type="submit" value="Enviar">
+        
+    </form>
+</body>
+</html>
