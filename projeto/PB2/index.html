@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jamilli Gioielli</title>
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			href="./img/favicon_avatar_roxo.png"
+			type="image/png"
+		/>
+		<!-- STYLES -->
+		<link rel="stylesheet" href="./css/estilos.css" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Poppins:ital,wght@0,700;0,800;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- SCRIPTS -->
+		<script
+			src="https://kit.fontawesome.com/6726683f80.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<body>
+		<header id="header">
+			<nav class="container">
+				<a class="logo" href="#"> &lt;/jamilligioielli&gt; </a>
+				<ul>
+					<li><a href="#home"> Home </a></li>
+					<li><a href="#sobre"> Sobre </a></li>
+					<li><a href="#skills"> Skills </a></li>
+					<li><a href="#projetos"> Projetos </a></li>
+					<li><a href="#contato"> Contato </a></li>
+				</ul>
+
+				<div id="toggle" onclick="switchMode()" id="switch">
+					<i class="fas fa-toggle-on"></i>
+					<!--trocar para fa-toggle-off -->
+				</div>
+
+			</nav>
+
+			<section class="section container" id="home">
+				<div class="titulo">
+					<h3 class="site-subtitle">Olá, meu nome é</h3>
+					<h1 class="site-title">Jamilli Gioielli</h1>
+					<hr />
+					<div class="icons">
+						<i class="fab fa-github"></i>
+						<i class="fab fa-codepen"></i>
+						<i class="fab fa-linkedin"></i>
+					</div>
+				</div>
+
+				<div class="avatar">
+					<img src="./img/avatar_home.svg" alt="" />
+				</div>
+
+				<div class="snd-titulo">
+					<h2 class="site-title">Posso te ajudar?</h2>
+					<p class="text">
+						Uma jovem mochileira: tenho 17 anos e curso o terceiro ano do
+						técnico de informática no IFSP, mas pode ter certeza que estou
+						pronta para qualquer desafio! É só chamar!
+					</p>
+					<div class="download-buttons">
+						<a href="mailto:jamilligioielli@outlook.com" id="submit-button">
+							<input type="button" value="Mande um email"/>
+						</a>
+						
+						<a href="./files/jamilligioielli_curriculo.pdf" download="jamilligioielli_curriculo" target="_blank" id="cv-button">
+							<i class="far fa-arrow-alt-circle-down"></i>
+							Baixar CV
+						</a>
+						
+					</div>
+				</div>
+
+			</section>
+
+		</header>
+
+		<main>
+			
+			<section class="section container" id="sobre">
+				<div class="image"> 
+					<img src="./img/JamilliGioielli.png" alt="Foto Pessoal Jamilli">
+				</div>
+				<div class="description">
+					<p>Sobre</p>
+					<h2 class="site-subtitle"> Quem sou eu? </h2>
+					<p class="text">
+						Certamente sou a aprendiz de programadora mais tagarela que você vai conhecer! Por isso, me considero bastante observadora e atenta nos bate-papos... 
+					</p>
+					<p class="text">
+						Gosto muito de passar um tempo lendo um bom livro, de qualquer assunto, mas também sou apaixonada por conversas empolgantes, principalmente quando acompanhadas de uma boa e velha xícara de café!
+					</p>
+				</div>
+			</section>
+
+			<section class="section container" id="skills">
+				<h2 class="site-subtitle"> Skills </h2>
+				<div class="lg-images grid">
+					<figure><img src="./img/icons/c.png" alt="c logo"></figure>
+					<figure><img src="./img/icons/java.png" alt="java logo"></figure>
+					<figure><img src="./img/icons/css.png" alt="css logo"></figure>
+					<figure><img src="./img/icons/html.png" alt="html logo"></figure>
+					<figure><img src="./img/icons/git.png" alt="git logo"></figure>
+					<figure><img src="./img/icons/mysql.png" alt="mysql logo"></figure>
+					<figure><img src="./img/icons/javascript.png" alt="javascript logo"></figure>
+					<figure><img src="./img/icons/php.png" alt="php logo"></figure>
+				</div>
+
+			</section>
+
+			<section class="section container" id="projetos">
+				<h2 class="site-subtitle"> Conheça meus projetos </h2>
+				<hr>
+				<div class="projetos-wrapper">
+					<div class="slider">
+						<div id="item">
+							<div class="image">
+								<img src="" alt="">
+							</div>
+							<div class="description">
+								<h4 class="site-subtitle"> Nome do Projeto </h4>
+								<p class="text"> Texto descritivo </p>
+								<div>
+									<input type="button" value="Saiba Mais">
+								</div>
+							</div>
+						</div>
+
+						<div id="item">
+							<div class="image">
+								<img src="" alt="">
+							</div>
+							<div class="description">
+								<h4 class="site-subtitle"> Nome do Projeto </h4>
+								<p class="text"> Texto descritivo </p>
+								<div>
+									<input type="button" value="Saiba Mais">
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="controls">
+      				<button class="next"><i class="fas fa-arrow-circle-left"></i></button>
+      				<button class="prev"><i class="fas fa-arrow-circle-right"></i></button>
+				</div>
+
+			</section>
+
+		</main>
+
+		<footer class="section" id="contato">
+			
+			<div class="description">
+				<h2 class="site-subtitle"> <i> Me mande um oi! </i> </h2>
+				<div class="text">
+					<p>
+						<i>Vamos bater um papo, tomar um café e planejar coisas legais? Me encontre nas redes ou me mande uma mensagem por aqui :)</i>
+					</p>
+					<i class="fab fa-telegram"> @jamilligioielli</i>
+					<a href="mailto:jamilligioielli@outlook.com">
+						<i class="far fa-envelope-open"></i>
+						jamilligioielli@outlook.com
+					</a>
+				</div>
+				
+			</div>
+
+			<div class="form container">
+				<form action="" >
+					<label for="idNome">Nome</label>
+						<input type="text" name="nome" id="idNome">
+
+					<label for="idEmail">Email</label>
+						<input type="email" name="email" id="idEmail">
+
+					<label for="idTelefone">Telefone</label>
+						<input type="tel" name="telefone" id="idTelefone">
+					
+					<label for="idCidade">Cidade</label>
+						<input list="cidades" name="cidade" id="idCidade">
+						<datalist id="cidades">
+							<option value="São Paulo"> 
+							<option value="Rio de Janeiro"> 
+							<option value="Campinas"> 
+							<option value="São Bernado"> 
+        				</datalist>
+					
+					<label for="idMensagem"> Mensagem </label>
+						<textarea name="mensagem" id="idMensagem" cols="20" rows="5" size = 50></textarea>
+
+					<input type="submit" value="Enviar" id="submit-button">
+				</form>
+			</div>
+
+
+			<div class="icons">
+						<i class="fab fa-github"></i>
+						<i class="fab fa-codepen"></i>
+						<i class="fab fa-linkedin"></i>
+			</div>
+
+		</footer>
+
+	</body>
+</html>

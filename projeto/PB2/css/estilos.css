@@ -1,0 +1,59 @@
+/* DEFAULT */
+:root{
+
+
+    /* texts */
+    --text-body: 'Open Sans', sans-serif;
+    --text-titles: 'Poppins', sans-serif;
+
+    /* colors */
+    --hue: 261;
+    /* HSL color mode */
+    --color-first: hsl(var(--hue), 56, 30, 100%);
+    --color-second: hsl(var(--hue), 77, 25, 100%);
+    --color-third: hsl(252, 96, 10, 100%);
+    --color-light: hsl(var(--hue), 46, 84, 100%);
+    --color-lighter: hsl(0, 0% ,98%);
+    --color-black: hsl(0, 0 , 0 , 100%);
+    --color-blue: hsl(var(--hue), 95, 9, 100%);
+    --color-blue-second: hsl(233, 96, 10, 100%);
+    /* Backgrounds */
+    /* Black mode */
+    --background-black: linear-gradient(192.69deg,
+     #D1C4E9 0%, 
+     rgba(209, 196, 233, 0.51) 0.01%, 
+     #8C98E7 0.02%, 
+     rgba(154, 153, 231, 0.89) 34.9%, 
+     #A9A7EF 46.35%, rgba(162, 169, 247, 0.88) 56.77%, 
+     rgba(168, 166, 244, 0.84) 60.94%,
+    rgba(142, 140, 221, 0.87) 80.21%, 
+    #402277 100%, #402277 100%);
+    /* White mode */
+    --background-white: linear-gradient(180deg, 
+    rgba(191, 166, 244, 0.8) 0%, 
+    #F5F1FF 22.4%, 
+    rgba(224, 217, 239, 0.980521) 57.81%, 
+    rgba(208, 199, 227, 0.965469) 71.35%, 
+    rgba(204, 180, 251, 0.87) 84.9%, 
+    rgba(64, 34, 119, 0.83) 100%);
+}
+/* White Mode */
+
+/* RESET */
+
+/* BASE */
+
+/* LAYOUT */
+
+/* HOME */
+
+
+
+/* ---------------- */
+/* SOBRE */
+
+/* SKILLS */
+
+/* PROJETOS */
+
+/* CONTATO */
