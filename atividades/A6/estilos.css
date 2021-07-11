@@ -19,6 +19,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden;
+}
+
 a{
     text-decoration:none;
 }
@@ -76,6 +80,7 @@ h1{
     display: grid;
     gap: 2rem;
 }
+
 .section{
     padding: 5rem 0;
 }
@@ -114,6 +119,7 @@ main{
 /* HOME */
 #home{
     overflow: hidden;
+    
 }
 
 #home .container{
@@ -132,13 +138,16 @@ main{
     background: var(--base-color-second);
     position: absolute;
     top: -16.8%;
-    /*left: 16.7%;*/
+    left: 16.8%;
     z-index: 0;
+   
 }
+
 #home .image img{
     position: relative;
     right: 2.93rem;
 }
+
 #home .image img,
 #home .image::before{
     border-radius: 0.25rem;
