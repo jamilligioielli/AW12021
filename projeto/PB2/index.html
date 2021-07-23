@@ -8,9 +8,11 @@
 		<!-- Favicon -->
 		<link
 			rel="shortcut icon"
-			href="./img/favicon_avatar_roxo.png"
+			href="./assets/img/favicon_avatar_roxo.png"
 			type="image/png"
 		/>
+		<!-- Icones -->
+    	<link rel="stylesheet" href="assets/fonts/style.css" />
 		<!-- STYLES -->
 		<link rel="stylesheet" href="./css/estilos.css" />
 
@@ -32,16 +34,16 @@
 			<nav class="container">
 				<a class="logo" href="#"> &lt;/jamilligioielli&gt; </a>
 				<ul>
-					<li><a href="#home"> Home </a></li>
-					<li><a href="#sobre"> Sobre </a></li>
+					<li><a href="#home"> Início </a></li>
+					<li><a href="#about"> Sobre </a></li>
 					<li><a href="#skills"> Skills </a></li>
-					<li><a href="#projetos"> Projetos </a></li>
-					<li><a href="#contato"> Contato </a></li>
+					<li><a href="#projects"> Projetos </a></li>
+					<li><a href="#contact"> Contato </a></li>
 				</ul>
 
 				<div id="toggle" onclick="switchMode()" id="switch">
-					<i class="fas fa-toggle-on"></i>
-					<!--trocar para fa-toggle-off -->
+					<i class="icon-toggle-on"></i>
+					<!--trocar para toggle-off -->
 				</div>
 
 			</nav>
@@ -52,14 +54,14 @@
 					<h1 class="site-title">Jamilli Gioielli</h1>
 					<hr />
 					<div class="icons">
-						<i class="fab fa-github"></i>
-						<i class="fab fa-codepen"></i>
-						<i class="fab fa-linkedin"></i>
+						<i class="icon-github"></i>
+						<i class="icon-codepen"></i>
+						<i class="icon-linkedin"></i>
 					</div>
 				</div>
 
 				<div class="avatar">
-					<img src="./img/avatar_home.svg" alt="" />
+					<img src="./assets/img/avatar_home.svg" alt="" />
 				</div>
 
 				<div class="snd-titulo">
@@ -74,8 +76,8 @@
 							<input type="button" value="Mande um email"/>
 						</a>
 						
-						<a href="./files/jamilligioielli_curriculo.pdf" download="jamilligioielli_curriculo" target="_blank" id="cv-button">
-							<i class="far fa-arrow-alt-circle-down"></i>
+						<a href="./assets/files/jamilligioielli_curriculo.pdf" download="jamilligioielli_curriculo" target="_blank" id="cv-button">
+							<i class="icon-download"></i>
 							Baixar CV
 						</a>
 						
@@ -88,9 +90,9 @@
 
 		<main>
 			
-			<section class="section container" id="sobre">
+			<section class="section container" id="about">
 				<div class="image"> 
-					<img src="./img/JamilliGioielli.png" alt="Foto Pessoal Jamilli">
+					<img src="./assets/img/JamilliGioielli.png" alt="Foto Pessoal Jamilli">
 				</div>
 				<div class="description">
 					<p>Sobre</p>
@@ -106,23 +108,23 @@
 
 			<section class="section container" id="skills">
 				<h2 class="site-subtitle"> Skills </h2>
-				<div class="lg-images grid">
-					<figure><img src="./img/icons/c.png" alt="c logo"></figure>
-					<figure><img src="./img/icons/java.png" alt="java logo"></figure>
-					<figure><img src="./img/icons/css.png" alt="css logo"></figure>
-					<figure><img src="./img/icons/html.png" alt="html logo"></figure>
-					<figure><img src="./img/icons/git.png" alt="git logo"></figure>
-					<figure><img src="./img/icons/mysql.png" alt="mysql logo"></figure>
-					<figure><img src="./img/icons/javascript.png" alt="javascript logo"></figure>
-					<figure><img src="./img/icons/php.png" alt="php logo"></figure>
+				<div class="lang-images grid">
+					<i class="icon-c"></i>
+					<i class="icon-java"></i>
+					<i class="icon-css3"></i>
+					<i class="icon-html5"></i>
+					<i class="icon-git"></i>
+					<i class="icon-mysql"></i>
+					<i class="icon-javascript"></i>
+					<i class="icon-php"></i>
 				</div>
 
 			</section>
 
-			<section class="section container" id="projetos">
+			<section class="section container" id="projects">
 				<h2 class="site-subtitle"> Conheça meus projetos </h2>
 				<hr>
-				<div class="projetos-wrapper">
+				<div class="projects-wrapper">
 					<div class="slider">
 						<div id="item">
 							<div class="image">
@@ -154,15 +156,15 @@
 				</div>
 
 				<div class="controls">
-      				<button class="next"><i class="fas fa-arrow-circle-left"></i></button>
-      				<button class="prev"><i class="fas fa-arrow-circle-right"></i></button>
+      				<button class="next"><i class="icon-arrow-left"></i></button>
+      				<button class="prev"><i class="icon-circle-right"></i></button>
 				</div>
 
 			</section>
 
 		</main>
 
-		<footer class="section" id="contato">
+		<footer class="section" id="contact">
 			
 			<div class="description">
 				<h2 class="site-subtitle"> <i> Me mande um oi! </i> </h2>
@@ -170,9 +172,9 @@
 					<p>
 						<i>Vamos bater um papo, tomar um café e planejar coisas legais? Me encontre nas redes ou me mande uma mensagem por aqui :)</i>
 					</p>
-					<i class="fab fa-telegram"> @jamilligioielli</i>
+					<i class="icon-telegram"> @jamilligioielli</i>
 					<a href="mailto:jamilligioielli@outlook.com">
-						<i class="far fa-envelope-open"></i>
+						<i class="icon-envelope"></i>
 						jamilligioielli@outlook.com
 					</a>
 				</div>
@@ -181,8 +183,8 @@
 
 			<div class="form container">
 				<form action="" >
-					<label for="idNome">Nome</label>
-						<input type="text" name="nome" id="idNome">
+					<label for="idName">Nome</label>
+						<input type="text" name="name" id="idName">
 
 					<label for="idEmail">Email</label>
 						<input type="email" name="email" id="idEmail">
@@ -190,17 +192,17 @@
 					<label for="idTelefone">Telefone</label>
 						<input type="tel" name="telefone" id="idTelefone">
 					
-					<label for="idCidade">Cidade</label>
-						<input list="cidades" name="cidade" id="idCidade">
-						<datalist id="cidades">
+					<label for="idCity">Cidade</label>
+						<input list="citys" name="city" id="idCity">
+						<datalist id="citys">
 							<option value="São Paulo"> 
 							<option value="Rio de Janeiro"> 
 							<option value="Campinas"> 
 							<option value="São Bernado"> 
         				</datalist>
 					
-					<label for="idMensagem"> Mensagem </label>
-						<textarea name="mensagem" id="idMensagem" cols="20" rows="5" size = 50></textarea>
+					<label for="idMensage"> Mensagem </label>
+						<textarea name="mensage" id="idMensage" cols="20" rows="5" size = 50></textarea>
 
 					<input type="submit" value="Enviar" id="submit-button">
 				</form>
