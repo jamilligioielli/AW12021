@@ -1,31 +1,29 @@
 /* DEFAULT */
 :root{
-    /* texts */
-    --text-body: 'Open Sans', sans-serif;
-    --text-titles: 'Poppins', sans-serif;
+     --header-height: 4.5rem;
 
     /* colors */
     --hue: 261;
     /* HSL color mode */
-    --color-first: hsl(var(--hue), 56, 30, 100%);
-    --color-second: hsl(var(--hue), 77, 25, 100%);
-    --color-third: hsl(252, 96, 10, 100%);
-    --color-light: hsl(var(--hue), 46, 84, 100%);
-    --color-lighter: hsl(0, 0% ,98%);
+    --color-first: hsl(var(--hue), 77%, 25%, 100%);
+    --color-second: hsl(var(--hue), 56%, 30%, 100%) ;
+    --color-third: hsl(252, 96%, 10%, 100%);
+    --color-light: hsl(var(--hue), 46%, 84%, 100%);
+    --color-lighter: hsl(0, 0% ,92%);
     --color-black: hsl(0, 0 , 0 , 100%);
-    --color-blue: hsl(var(--hue), 95, 9, 100%);
-    --color-blue-second: hsl(233, 96, 10, 100%);
+    --color-blue: hsl(var(--hue), 95%, 9%, 100%);
+    --color-blue-second: hsl(233, 96%, 10%, 100%);
     /* Backgrounds */
     /* Black mode */
-    --background-black: linear-gradient(192.69deg,
-     #D1C4E9 0%, 
-     rgba(209, 196, 233, 0.51) 0.01%, 
+    --background-black: linear-gradient(200deg,
+     #d3c8e7 0%, 
+     rgba(209, 196, 233, 0.52) 0.03%, 
      #8C98E7 0.02%, 
-     rgba(154, 153, 231, 0.89) 34.9%, 
-     #A9A7EF 46.35%, rgba(162, 169, 247, 0.88) 56.77%, 
-     rgba(168, 166, 244, 0.84) 60.94%,
-    rgba(142, 140, 221, 0.87) 80.21%, 
-    #402277 100%, #402277 100%);
+     rgba(154, 153, 231, 0.89) 40%, 
+     #A9A7EF 46.35%, rgba(162, 169, 247, 0.88) 60%, 
+     rgba(168, 166, 244, 0.84) 61%,
+     rgba(142, 140, 221, 0.87) 81%, 
+     #402277 100%, #402277 100%);
     /* White mode */
     --background-white: linear-gradient(180deg, 
     rgba(191, 166, 244, 0.8) 0%, 
@@ -34,6 +32,13 @@
     rgba(208, 199, 227, 0.965469) 71.35%, 
     rgba(204, 180, 251, 0.87) 84.9%, 
     rgba(64, 34, 119, 0.83) 100%);
+
+    /* fonts */
+  --title-font-size: 2.2rem;
+  --subtitle-font-size: 1.56rem;
+
+  --title-font: "Poppins", sans-serif;
+  --body-font: 'Open Sans', sans-serif;
 }
 /* White Mode */
 
@@ -43,23 +48,224 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul{
+    list-style: none;
+}
+
+html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
 a{
     text-decoration: none;
 }
+
 img{
     width: 100%;
     height: auto;
 }
-body{
-    background-image: var(--background-black);
-}
 
 /* BASE */
+body{
+    font: 400 1rem var(--body-font);
+    background: var(--background-black);
+    -webkit-font-smoothing: antialiased;
+}
+
+.site-title{
+    font: bold var(--title-font-size) var(--title-font);
+    color: var(--color-blue);
+    text-align: left;
+}
+
+.site-subtitle{
+    font: bold var(--subtitle-font-size) var(--title-font);
+    color: var(--color-lighter);
+}
+
+.divider-1{
+    height: 5px;
+    width: 20%;
+    background: var(--color-first);
+}
+
+.submit-button{
+    background-color: var(--color-first);
+    color: var(--color-lighter);
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.625rem ;
+    font: 700 1rem var(--body-font);
+    border: 2px solid var(--color-light);
+    box-shadow: 0px 4px 4px 0px hsl(261, 56%, 30%, 84%);
+    transition: background 0.3s;
+}
+
+.submit-button:hover{
+    background: var(--color-second);
+}
 
 /* LAYOUT */
+.container{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.grid{
+    display: grid;
+    gap: 2rem;
+}
+
+.section{
+    padding: calc(3rem + var(--header-height))  0;
+    /* mudar depois conforme as adaptações */
+}
+.section .site-subtitle{
+    margin-bottom: 1rem;
+}
+
+.section header{
+    margin-bottom: 4em;
+}
+
+.section header strong{
+    color: var(--color-blue);
+}
+
+#header{
+    /* border-bottom: 1px solid var(--color-blue); */
+    margin-bottom: 2rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--background-black);
+    width: 100%;
+}
+
+#header.scroll{
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* LOGO */
+.logo{
+    font: 700 1.31rem var(--title-font);
+    color: var(--color-blue);
+    
+}
+
+/* NAVIGATION */
+nav{
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+nav ul li{
+    text-align: center;
+}
+
+nav ul li a{
+    transition: color 0.2s;
+    position: relative;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--color-first);
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--color-first);
+
+    position: absolute; 
+    left: 0;
+    bottom: -1.5rem;
+
+    transition: width 0.2s;
+}
+
+/* faz a animação de preenchimento*/
+nav ul li a:hover::after,
+nav ul li a.active::after{
+    width: 100%;
+}
+
+nav .menu {
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+    transition: 0.2s;
+}
+
+nav .menu ul{
+    display: none;
+}
+
+/* Menu sanduich show*/
+nav.show .menu{
+    opacity: 1;
+    visibility: visible;
+
+    background: #A8A6F4;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    place-content: center; /* deixa tudo centralizado com a mesma margin*/
+}
+
+    
+nav.show .menu ul{
+    display: grid;
+}
+
+nav.show ul.grid{
+    gap: 4rem;
+}
+
+/* TOGGLE MENU */
+.toggle{
+    color: var(--color-blue);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav .icon-close{
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+
+    transition: 0.2s;
+}
+
+nav.show div.icon-close{
+    visibility: visible;
+    opacity: 1;
+    top: 1.5rem;
+}
 
 /* HOME */
+
+#home{
+    overflow: hidden;  
+}
+
 /* MENU */
 
 

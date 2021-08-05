@@ -13,6 +13,10 @@
 		/>
 		<!-- Icones -->
     	<link rel="stylesheet" href="assets/fonts/style.css" />
+
+		 <!-- Swiper -->
+		<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+
 		<!-- STYLES -->
 		<link rel="stylesheet" href="./css/estilos.css" />
 
@@ -33,63 +37,75 @@
 		<header id="header">
 			<nav class="container">
 				<a class="logo" href="#"> &lt;/jamilligioielli&gt; </a>
-				<ul>
-					<li><a href="#home"> Início </a></li>
-					<li><a href="#about"> Sobre </a></li>
-					<li><a href="#skills"> Skills </a></li>
-					<li><a href="#projects"> Projetos </a></li>
-					<li><a href="#contact"> Contato </a></li>
-				</ul>
-
-				<div id="toggle" onclick="switchMode()" id="switch">
-					<i class="icon-toggle-on"></i>
-					<!--trocar para toggle-off -->
+				<!-- menu -->
+				<div class="menu">
+					<ul class="grid">
+						<li><a class="title" href="#home"> Início </a></li>
+						<li><a class="title" href="#about"> Sobre </a></li>
+						<li><a class="title" href="#skills"> Skills </a></li>
+						<li><a class="title" href="#projects"> Projetos </a></li>
+						<li><a class="title" href="#contact"> Contato </a></li>
+						<li id="switch">
+						<i class="icon-toggle-on"></i>
+						<!--trocar para toggle-off -->
+						</li>
+					</ul>
 				</div>
-
+				<!-- /menu -->
+				 <div class="toggle icon-menu"></div>
+        		<div class="toggle icon-close"></div>
 			</nav>
-
-			<section class="section container" id="home">
-				<div class="titulo">
-					<h3 class="site-subtitle">Olá, meu nome é</h3>
-					<h1 class="site-title">Jamilli Gioielli</h1>
-					<hr />
-					<div class="icons">
-						<i class="icon-github"></i>
-						<i class="icon-codepen"></i>
-						<i class="icon-linkedin"></i>
-					</div>
-				</div>
-
-				<div class="avatar">
-					<img src="./assets/img/avatar_home.svg" alt="" />
-				</div>
-
-				<div class="snd-titulo">
-					<h2 class="site-title">Posso te ajudar?</h2>
-					<p class="text">
-						Uma jovem mochileira: tenho 17 anos e curso o terceiro ano do
-						técnico de informática no IFSP, mas pode ter certeza que estou
-						pronta para qualquer desafio! É só chamar!
-					</p>
-					<div class="download-buttons">
-						<a href="mailto:jamilligioielli@outlook.com" id="submit-button">
-							<input type="button" value="Mande um email"/>
-						</a>
-						
-						<a href="./assets/files/jamilligioielli_curriculo.pdf" download="jamilligioielli_curriculo" target="_blank" id="cv-button">
-							<i class="icon-download"></i>
-							Baixar CV
-						</a>
-						
-					</div>
-				</div>
-
-			</section>
 
 		</header>
 
 		<main>
 			
+			<section class="section container" id="home">
+				<div class="container grid">
+					<div class="titulo">
+						<h3 class="site-subtitle">Olá, meu nome é</h3>
+						<h1 class="site-title">
+						Jamilli 
+						Gioielli
+						 </h1>
+							<div class="divider-1"></div>
+
+						<div class="icons">
+								<i class="icon-github"></i>
+								<i class="icon-codepen"></i>
+								<i class="icon-linkedin"></i>
+						</div>
+					</div>
+
+					<div class="avatar">
+						<img src="./assets/img/avatar_home.svg" alt="" />
+					</div>
+
+					<div class="snd-titulo">
+						<h2 class="site-title">Posso te ajudar?</h2>
+						<p class="text">
+							Uma jovem mochileira: tenho 17 anos e curso o terceiro ano do
+							técnico de informática no IFSP, mas pode ter certeza que estou
+							pronta para qualquer desafio! É só chamar!
+						</p>
+						
+					</div>
+					<div class="download-buttons">
+							<a href="mailto:jamilligioielli@outlook.com" class="submit-button">
+								Mande um email
+							</a>
+							
+							<a href="./assets/files/jamilligioielli_curriculo.pdf" download="jamilligioielli_curriculo" target="_blank" class="cv-button">
+								<i class="icon-download"></i>
+								Baixar CV
+							</a>
+							
+					</div>
+			</div>
+				
+
+			</section>
+
 			<section class="section container" id="about">
 				<div class="image"> 
 					<img src="./assets/img/JamilliGioielli.png" alt="Foto Pessoal Jamilli">
@@ -123,10 +139,13 @@
 
 			<section class="section container" id="projects">
 				<h2 class="site-subtitle"> Conheça meus projetos </h2>
-				<hr>
-				<div class="projects-wrapper">
-					<div class="slider">
-						<div id="item">
+				<div class="divider-1"></div>
+				<!-- Slider main container -->
+				<div class="swiper-container">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper slider">
+						 <!-- Slides -->
+						<div id="swiper-slide">
 							<div class="image">
 								<img src="" alt="">
 							</div>
@@ -139,7 +158,7 @@
 							</div>
 						</div>
 
-						<div id="item">
+						<div id="swiper-slide">
 							<div class="image">
 								<img src="" alt="">
 							</div>
@@ -153,18 +172,26 @@
 						</div>
 						
 					</div>
+
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
 				</div>
 
-				<div class="controls">
+				<!-- <div class="controls">
       				<button class="next"><i class="icon-arrow-left"></i></button>
       				<button class="prev"><i class="icon-circle-right"></i></button>
-				</div>
+				</div> -->
 
 			</section>
 
 		</main>
 
-		<footer class="section" id="contact">
+		<footer class="section container" id="contact">
 			
 			<div class="description">
 				<h2 class="site-subtitle"> <i> Me mande um oi! </i> </h2>
@@ -217,5 +244,8 @@
 
 		</footer>
 
+
+	<!-- main.js -->
+    <script src="./js/script.js"></script>
 	</body>
 </html>
