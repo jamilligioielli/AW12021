@@ -12,18 +12,21 @@
 			type="image/png"
 		/>
 		<!-- Icones -->
-    	<link rel="stylesheet" href="assets/fonts/style.css" />
-
-		 <!-- Swiper -->
-		<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+		<link rel="stylesheet" href="assets/fonts/style.css" />
+		
+		<!-- Swiper -->
+   		 <link
+     	 rel="stylesheet"
+     	 href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    	/>
 
 		<!-- STYLES -->
 		<link rel="stylesheet" href="./css/estilos.css" />
-
+		
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Poppins:ital,wght@0,700;0,800;1,700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700;1,800&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 			rel="stylesheet"
 		/>
 		<!-- SCRIPTS -->
@@ -33,219 +36,293 @@
 		></script>
 	</head>
 
-	<body>
-		<header id="header">
-			<nav class="container">
-				<a class="logo" href="#"> &lt;/jamilligioielli&gt; </a>
-				<!-- menu -->
-				<div class="menu">
-					<ul class="grid">
-						<li><a class="title" href="#home"> Início </a></li>
-						<li><a class="title" href="#about"> Sobre </a></li>
-						<li><a class="title" href="#skills"> Skills </a></li>
-						<li><a class="title" href="#projects"> Projetos </a></li>
-						<li><a class="title" href="#contact"> Contato </a></li>
-						<li id="switch">
-						<i class="icon-toggle-on"></i>
-						<!--trocar para toggle-off -->
-						</li>
-					</ul>
-				</div>
-				<!-- /menu -->
-				 <div class="toggle icon-menu"></div>
-        		<div class="toggle icon-close"></div>
-			</nav>
-
-		</header>
-
-		<main>
-			
-			<section class="section container" id="home">
-				<div class="container grid">
-					<div class="titulo">
-						<h3 class="site-subtitle">Olá, meu nome é</h3>
-						<h1 class="site-title">
-						Jamilli 
-						Gioielli
-						 </h1>
-							<div class="divider-1"></div>
-
-						<div class="icons">
-								<i class="icon-github"></i>
-								<i class="icon-codepen"></i>
-								<i class="icon-linkedin"></i>
-						</div>
-					</div>
-
-					<div class="avatar">
-						<img src="./assets/img/avatar_home.svg" alt="" />
-					</div>
-
-					<div class="snd-titulo">
-						<h2 class="site-title">Posso te ajudar?</h2>
-						<p class="text">
-							Uma jovem mochileira: tenho 17 anos e curso o terceiro ano do
-							técnico de informática no IFSP, mas pode ter certeza que estou
-							pronta para qualquer desafio! É só chamar!
-						</p>
-						
-					</div>
-					<div class="download-buttons">
-							<a href="mailto:jamilligioielli@outlook.com" class="submit-button">
-								Mande um email
-							</a>
-							
-							<a href="./assets/files/jamilligioielli_curriculo.pdf" download="jamilligioielli_curriculo" target="_blank" class="cv-button">
-								<i class="icon-download"></i>
-								Baixar CV
-							</a>
-							
-					</div>
+<body>
+	<header id="header">
+		<nav class="container">
+			<a class="logo" href="#"> &lt;/jamilligioielli&gt; </a>
+			<!-- menu -->
+			<div class="menu">
+				<ul class="grid">
+					<li><a class="title" href="#home"> Início </a></li>
+					<li><a class="title" href="#about"> Sobre </a></li>
+					<li><a class="title" href="#skills"> Skills </a></li>
+					<li><a class="title" href="#projects"> Projetos </a></li>
+					<li><a class="title" href="#contact"> Contato </a></li>
+					<li id="switch">
+						<i class="toggle icon-toggle-on"></i>
+						<!--trocar para toggle-off --></li>
+				</ul>
 			</div>
+			<!-- /menu -->
+			<div class="toggle icon-menu"></div>
+			<div class="toggle icon-close"></div>
+		</nav>
+	</header>
+
+	<main>
+		<!-- HOME -->
+		<section class="section container" id="home">
+			<div class="container grid">
+				
+				<div class="titulo-box">
+					<div class="titulo">
+					<span class="site-subtitle">Olá, meu nome é</span>
+					<div class="site-title">
+						<h1>Jamilli Gioielli</h1>
+						<div class="divider-1"></div>
+					</div>
+
+					<div class="icons grid">
+						<a href="https://github.com/jamilligioielli" target="_blank">
+							<i class="icon-github"></i>
+						</a>
+						<a href="https://codepen.io/jamilligioielli" target="_blank">
+							<i class="icon-codepen"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/jamilligioielli/" target="_blank">
+							<i class="icon-linkedin"></i>
+						</a>
+					</div>
+					
+				</div>
+					<div class="avatar">
+					<img src="./assets/img/avatar_home_sit.svg" alt="" />
+				</div>
+				</div>
 				
 
-			</section>
-
-			<section class="section container" id="about">
-				<div class="image"> 
-					<img src="./assets/img/JamilliGioielli.png" alt="Foto Pessoal Jamilli">
+				<div class="snd-titulo">
+					<h2 class="site-title">Posso te ajudar?</h2>
+					<p class="text">
+						Uma jovem mochileira: tenho 17 anos e curso o terceiro ano do
+						técnico de informática no IFSP, mas pode ter certeza que estou
+						pronta para qualquer desafio! É só chamar!
+					</p>
 				</div>
+				<div class="download-buttons grid">
+					<a href="mailto:jamilligioielli@outlook.com" class="submit-button">
+						Mande um email
+					</a>
+
+					<button class="cv-button">
+						<a
+							href="./assets/files/jamilligioielli_curriculo.pdf"
+							download="jamilligioielli_curriculo"
+							target="_blank"
+						>
+							<i class="icon-download1"> </i>
+							<span>Baixar CV</span>
+						</a>
+					</button>
+				</div>
+			</div>
+		</section>
+		<!-- ABOUT -->
+		<section class="section" id="about">
+			<div class="container ">
+				<div class="image-box">
+				<div class="image">
+					<img
+						src="./assets/img/JamilliGioielli.png"
+						alt="Foto Pessoal Jamilli"
+					/>
+					</div>
+				</div>
+				
 				<div class="description">
 					<p>Sobre</p>
-					<h2 class="site-subtitle"> Quem sou eu? </h2>
+					<h2 class="site-subtitle">Quem sou eu?</h2>
 					<p class="text">
-						Certamente sou a aprendiz de programadora mais tagarela que você vai conhecer! Por isso, me considero bastante observadora e atenta nos bate-papos... 
+						Certamente sou a aprendiz de programadora mais tagarela que você
+						vai conhecer! Por isso, me considero bastante observadora e atenta
+						nos bate-papos...
 					</p>
 					<p class="text">
-						Gosto muito de passar um tempo lendo um bom livro, de qualquer assunto, mas também sou apaixonada por conversas empolgantes, principalmente quando acompanhadas de uma boa e velha xícara de café!
+						Gosto muito de passar um tempo lendo um bom livro, de qualquer
+						assunto, mas também sou apaixonada por conversas empolgantes,
+						principalmente quando acompanhadas de uma boa e velha xícara de
+						café!
 					</p>
 				</div>
-			</section>
-
-			<section class="section container" id="skills">
-				<h2 class="site-subtitle"> Skills </h2>
-				<div class="lang-images grid">
-					<i class="icon-c"></i>
-					<i class="icon-java"></i>
-					<i class="icon-css3"></i>
-					<i class="icon-html5"></i>
-					<i class="icon-git"></i>
-					<i class="icon-mysql"></i>
-					<i class="icon-javascript"></i>
-					<i class="icon-php"></i>
+			</div>
+		</section>
+		<!-- SKILLS -->
+		<section class="section container" id="skills">
+			<div class="skills-box">
+				<h2 class="site-subtitle">Skills</h2>
+				<div class="lang-images">
+					<ul class="grid">
+						<li><i class="icon-c" style="color: #024e88; background: #cbe7fd;" ></i></li>
+						<li><i class="icon-java" style="color: #023646; background: #c2e6f1;"></i></li>
+						<li><i class="icon-css3" style="color:#115483; background: #cde9fd;"></i></li>
+						<li><i class="icon-html5" style="color: #ca3207; background:#ffcabc ;"></i></li>
+						<li><i class="icon-git" style="color:#ad2b14; background: #facfc8;"></i></li>
+						<li><i class="icon-mysql" style="color: #295272; background: #e7f1f8;"></i></li>
+						<li><i class="icon-javascript" style="color: #9c8e20; background: #fffce3;"></i></li>
+						<li><i class="icon-php" style="color:#262d8d; background: #dddeee;"></i></li>
+					</ul>
 				</div>
-
-			</section>
-
-			<section class="section container" id="projects">
-				<h2 class="site-subtitle"> Conheça meus projetos </h2>
+			</div>
+		</section>
+		<!-- PROJECTS -->
+		<section class="section container" id="projects">
+		<div class="container">
+          <header>
+				<h2 class="site-subtitle">Conheça meus projetos</h2>
 				<div class="divider-1"></div>
-				<!-- Slider main container -->
-				<div class="swiper-container">
-					<!-- Additional required wrapper -->
-					<div class="swiper-wrapper slider">
-						 <!-- Slides -->
-						<div id="swiper-slide">
-							<div class="image">
-								<img src="" alt="">
-							</div>
-							<div class="description">
-								<h4 class="site-subtitle"> Nome do Projeto </h4>
-								<p class="text"> Texto descritivo </p>
-								<div>
-									<input type="button" value="Saiba Mais">
-								</div>
-							</div>
-						</div>
-
-						<div id="swiper-slide">
-							<div class="image">
-								<img src="" alt="">
-							</div>
-							<div class="description">
-								<h4 class="site-subtitle"> Nome do Projeto </h4>
-								<p class="text"> Texto descritivo </p>
-								<div>
-									<input type="button" value="Saiba Mais">
-								</div>
-							</div>
-						</div>
-						
+			</header>
+          <div class="slider swiper-container">
+            <div class="swiper-wrapper ">
+            <div class="slide swiper-slide">
+                <div class="image">
+					<img src="./assets//img/octopus.png" alt="" />
+				</div>
+				<div class="description">
+					<h4 class="site-subtitle"> Octupus</h4>
+					<p class="text">Sistema voltado para a prática de matemática básica com um banco de questões de vestibulares.</p>
+					<div class="button">
+						<a href="https://github.com/jamilligioielli/Octupus" target="_blank">
+							Saiba Mais
+						</a>
 					</div>
+              </div>
+			</div>
 
-					<!-- If we need pagination -->
-					<div class="swiper-pagination"></div>
+            <div class="slide swiper-slide">
+                <div class="image">
+					<img src="./assets/img/leonardo-da-vinci.png" alt="" />
+				</div>
+				<div class="description">
+					<h4 class="site-subtitle">Imersão CSS </h4>
+					<p class="text">Portfolio de Leonardo da Vinci feito com HTML e CSS</p>
+					<div class="button">
+						<a href="https://jamilligioielli.github.io/aluraimersaojamilli/" target="_blank">
+							Saiba Mais
+						</a>
+					</div>
+              </div>
+			</div>
 
-					<!-- If we need navigation buttons -->
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
+              <div class="slide swiper-slide">
+                <div class="image">
+					<img src="./assets/img/maze.png" alt="" />
+				</div>
+				<div class="description">
+					<h4 class="site-subtitle"> Techtravel </h4>
+					<p class="text">Jogo de labirinto 2D voltado para informática, tendo a personagem histórica Ada Lovelace como protagonista.</p>
+					<div class="button">
+						<a href="https://github.com/jamilligioielli/Techtravel" target="_blank">
+							Saiba Mais
+						</a>
+					</div>
+              </div>
+			</div>
+              
+			  </div>
 
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>  
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+		</section>
+	</main>
+	<!-- CONTACT -->
+	<section class="section grid" id="contact">
+		<div class="container">
+				<div class="description">
+					<h2 class="site-subtitle"><i> Me mande um oi! </i></h2>
+					<div class="text">
+						<p>
+							Vamos bater um papo, tomar um café e planejar coisas legais? Me
+							encontre nas redes ou me mande uma mensagem por aqui :)
+						</p>
+						<div class="icons grid">
+							<span>
+								<i class="icon-telegram"> </i>
+								@jamilligioielli
+							</span>
+
+							<a href="mailto:jamilligioielli@outlook.com">
+								<i class="icon-envelope"></i>
+								jamilligioielli@outlook.com
+							</a>
+						</div>
+					</div>
 				</div>
 
-				<!-- <div class="controls">
-      				<button class="next"><i class="icon-arrow-left"></i></button>
-      				<button class="prev"><i class="icon-circle-right"></i></button>
-				</div> -->
+				<div class="form">
+					<form action="" method="GET" class="grid">
+						<label for="idName" >Nome</label>
+						<input class="input" type="text" name="name" id="idName" autocomplete="off" placeholder= "Qual o seu nome?" required/>
 
-			</section>
+						<label for="idEmail">Email</label>
+						<input class="input" type="email" name="email" id="idEmail" autocomplete="off" placeholder= "E seu e-mail?" required />
 
-		</main>
+						<label for="idTelefone" >Telefone</label>
+						<input class="input"
+							type="tel"
+							name="telefone"
+							id="idTelefone"
+							autocomplete="off"
+						placeholder= "O telefone é opcional"/>
 
-		<footer class="section container" id="contact">
+						<label for="idCity" >Cidade</label>
+						<input class="input" list="citys" name="city" id="idCity" autocomplete="off" placeholder= "Onde você mora?" />
+						<datalist id="citys">
+							<option value="São Paulo"></option>
+							<option value="Rio de Janeiro"></option>
+							<option value="Campinas"></option>
+							<option value="São Bernado"></option>
+						</datalist>
+
+						<label for="idMensage" > Mensagem </label>
+						<textarea
+							name="mensage"
+							id="idMensage"
+							cols="20"
+							rows="5"
+							size="50"
+							placeholder= "Escreva sua mensagem" 
+						></textarea>
+
+						<input type="submit" value="Enviar" class="submit-button" />
+					</form>
+				</div>
+		</div>
+	</section>
+
+	<footer>
+			<div class="brand">
+				<a class="logo" href="#home"> &lt;/jamilligioielli&gt; </a>
+				<p>©2021 jamilligioielli.</p>
+				<p>Todos os direitos reservados.</p>
+			</div>
 			
-			<div class="description">
-				<h2 class="site-subtitle"> <i> Me mande um oi! </i> </h2>
-				<div class="text">
-					<p>
-						<i>Vamos bater um papo, tomar um café e planejar coisas legais? Me encontre nas redes ou me mande uma mensagem por aqui :)</i>
-					</p>
-					<i class="icon-telegram"> @jamilligioielli</i>
-					<a href="mailto:jamilligioielli@outlook.com">
-						<i class="icon-envelope"></i>
-						jamilligioielli@outlook.com
+			<div class="icons grid">
+					<a href="https://github.com/jamilligioielli" target="_blank">
+						<i class="icon-github"></i>
+					</a>
+					<a href="https://codepen.io/jamilligioielli" target="_blank">
+						<i class="icon-codepen"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/jamilligioielli/" target="_blank">
+						<i class="icon-linkedin"></i>
 					</a>
 				</div>
-				
-			</div>
+	</footer>
 
-			<div class="form container">
-				<form action="" >
-					<label for="idName">Nome</label>
-						<input type="text" name="name" id="idName">
+	<a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
 
-					<label for="idEmail">Email</label>
-						<input type="email" name="email" id="idEmail">
+	<!-- swiper -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-					<label for="idTelefone">Telefone</label>
-						<input type="tel" name="telefone" id="idTelefone">
-					
-					<label for="idCity">Cidade</label>
-						<input list="citys" name="city" id="idCity">
-						<datalist id="citys">
-							<option value="São Paulo"> 
-							<option value="Rio de Janeiro"> 
-							<option value="Campinas"> 
-							<option value="São Bernado"> 
-        				</datalist>
-					
-					<label for="idMensage"> Mensagem </label>
-						<textarea name="mensage" id="idMensage" cols="20" rows="5" size = 50></textarea>
-
-					<input type="submit" value="Enviar" id="submit-button">
-				</form>
-			</div>
-
-
-			<div class="icons">
-						<i class="fab fa-github"></i>
-						<i class="fab fa-codepen"></i>
-						<i class="fab fa-linkedin"></i>
-			</div>
-
-		</footer>
-
+	<!-- scrollreveal -->
+	<script src="https://unpkg.com/scrollreveal"></script>
 
 	<!-- main.js -->
-    <script src="./js/script.js"></script>
+	<script src="./js/script.js"></script>
 	</body>
 </html>
