@@ -14,9 +14,7 @@
 	--text-color-light: hsl(0, 0%, 98%);
 	--body-color: hsl(0, 0%, 98%);
 	/* Backgrounds */
-	/* Black mode */
 	--background-black: hsl(231, 86%, 77%);
-	/* White mode */
 
 	/* fonts */
 	--title-font-size: 2rem;
@@ -25,7 +23,7 @@
 	--title-font: 'Poppins', sans-serif;
 	--subtitle-font: 'Ubuntu', sans-serif;
 }
-/* White Mode */
+
 
 /* RESET */
 * {
@@ -277,15 +275,15 @@ nav.show div.icon-close {
 
 #home .titulo {
 	width: 100%;
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-    margin-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
-#home .titulo .divider-1{
-    width: 100%;
+#home .titulo .divider-1 {
+	width: 100%;
 }
 
 #home .titulo .site-title h1 {
@@ -716,22 +714,19 @@ footer .icons a:hover {
 }
 
 /*    RESPONSIVIDADE  */
-@media (min-width: 430px) {
-	#skills .skills-box .lang-images .grid {
-		grid-template-columns: repeat(3, 100px);
-	}
-}
 
 /*  extra large devices:  1200 >  */
 @media (min-width: 1200px) {
 	/* BASE */
-	.container {
+	.container,
+	.section {
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	nav.container,
 	#home.section,
+	#about.container,
 	#about.container.section,
 	#skills.container.section {
 		max-width: 72rem;
@@ -778,8 +773,6 @@ footer .icons a:hover {
 		flex-direction: row;
 		width: 100%;
 		justify-content: end;
-		margin: 0 4.5rem;
-        max-width: 72rem;
 	}
 
 	#home .titulo {
@@ -864,7 +857,7 @@ footer .icons a:hover {
 		margin: 0 4rem;
 	}
 
-	#skills .skills-box .lang-images .grid {
+	#skills .skills-box .lang-images ul.grid {
 		justify-content: center;
 		grid-template-columns: repeat(4, 240px);
 		gap: 0.5rem;
@@ -914,5 +907,12 @@ footer .icons a:hover {
 
 	#contact .description {
 		width: 50%;
+	}
+}
+
+/*    medium devices >   */
+@media (min-width: 430px) {
+	#skills .skills-box .lang-images .grid {
+		grid-template-columns: repeat(3, 100px);
 	}
 }
