@@ -69,7 +69,7 @@ scrollReveal.reveal(
   #skills .site-subtitle, #skills i,
   #projects header, #projects .slider,
   #contact .site-subtitle, #contact .text, #contact .form,
-  footer .brand, footer i
+  footer .brand, footer .icons
   `,
 	{ interval: 50 }
 )
@@ -77,7 +77,7 @@ scrollReveal.reveal(
 
 
 // Menu ativo conforme a seção visivel na página //
-const sections = document.querySelectorAll('main section[id]')
+const sections = document.querySelectorAll('section[id]')
 function activateMenuAtCurrentSection(){
 
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4

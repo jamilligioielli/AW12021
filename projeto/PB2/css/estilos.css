@@ -726,10 +726,11 @@ footer .icons a:hover {
 
 	nav.container,
 	#home.section,
-	#about.container,
 	#about.container.section,
-	#skills.container.section {
+	#skills.container.section,
+	#contact {
 		max-width: 72rem;
+		width: 100%;
 	}
 
 	.site-subtitle {
@@ -772,13 +773,10 @@ footer .icons a:hover {
 	#home .titulo-box {
 		flex-direction: row;
 		width: 100%;
-		justify-content: end;
 	}
 
 	#home .titulo {
-		justify-self: center;
 		width: 100%;
-		left: 0;
 	}
 
 	#home .divider-1 {
@@ -822,7 +820,6 @@ footer .icons a:hover {
 	/*  SOBRE */
 	#about {
 		position: relative;
-		/* top: -8rem; */
 		margin: 0 4rem;
 	}
 
@@ -869,6 +866,11 @@ footer .icons a:hover {
 	}
 
 	/* PROJETOS */
+
+	#projects {
+		margin: 0 4rem;
+	}
+
 	#projects.section {
 		padding: 5rem 4rem;
 	}
@@ -907,6 +909,10 @@ footer .icons a:hover {
 
 	#contact .description {
 		width: 50%;
+	}
+
+	#contact .description .text{
+		width: 80%;
 	}
 }
 
