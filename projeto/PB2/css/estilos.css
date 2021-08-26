@@ -715,6 +715,82 @@ footer .icons a:hover {
 
 /*    RESPONSIVIDADE  */
 
+/*    large devices:  1023 >  */
+
+
+
+/*    medium devices >   */
+@media (min-width: 465px) {
+	#skills .skills-box .lang-images .grid {
+		grid-template-columns: repeat(3, 100px);
+	}
+
+	/* NAVIGATION */
+	nav.show ul.grid {
+		gap: 2.5rem;
+	}
+
+	#home .titulo-box {
+		width: 100%;
+	}
+
+	#home .titulo {
+		width: 100%;
+	}
+
+	#home .divider-1 {
+		width: 90%;
+	}
+
+	#home .titulo .site-title h1 {
+		font-size: 3rem;
+	}
+
+	#home .subtitulo {
+		width: 100%;
+	}
+
+	#home .subtitulo .site-title {
+		font-size: 2.5rem;
+	}
+}
+
+@media (min-width: 660px) {
+	:root{
+        --title-font-size: 3.5rem;
+        --subtitle-font-size: 1.9rem;
+    }
+
+	#skills .skills-box .lang-images .grid {
+		grid-template-columns: repeat(3, 150px);
+	}
+
+	#skills .skills-box .lang-images i {
+		font-size: 4.5rem;
+	}
+	
+	
+	
+
+}
+
+/*    large device: 992 >  */
+@media (min-width: 992px){
+    
+	#skills .skills-box .lang-images .grid{
+		grid-template-columns: repeat(4, 200px);
+	}
+
+	nav .menu ul li a.title.active {
+		font-weight: bold;
+		-webkit-font-smoothing: auto;
+	}
+
+		
+}
+
+
+
 /*  extra large devices:  1200 >  */
 @media (min-width: 1200px) {
 	/* BASE */
@@ -916,9 +992,3 @@ footer .icons a:hover {
 	}
 }
 
-/*    medium devices >   */
-@media (min-width: 430px) {
-	#skills .skills-box .lang-images .grid {
-		grid-template-columns: repeat(3, 100px);
-	}
-}

@@ -50,7 +50,7 @@ const swiper = new Swiper('.swiper-container', {
 	pagination: {
 		el: '.swiper-pagination'
 	},
-	mousewheel: true,
+	mousewheel: false,
 	keyboard: true
 })
 
@@ -102,9 +102,21 @@ function activateMenuAtCurrentSection(){
     }
 
   }
-
-
 }
+
+//  Switch button //
+const element = document.body
+const button = document.querySelectorAll("i.switch")
+button.onclick = function () {
+  if (button.classList("icon-toggle-on")) {
+    console.log("blackmode")
+    
+  } else {
+    console.log('whitemode')
+  }
+}
+
+
 
 /* When Scroll */
 window.addEventListener('scroll', function () {

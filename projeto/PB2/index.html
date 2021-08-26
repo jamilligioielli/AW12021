@@ -34,6 +34,10 @@
 			src="https://kit.fontawesome.com/6726683f80.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 	</head>
 
 	<body>
@@ -273,9 +277,10 @@
 									<img src="./assets/img/sunny.png" alt="Sol Kuarasy" />
 								</div>
 								<div class="description">
-									<h4 class="site-subtitle">Kuârasy </h4>
+									<h4 class="site-subtitle">Kûarasy</h4>
 									<p class="text">
-										Projeto de loja virtual que pretende focar na cultura de vendedores imigrantes brasileiros - ainda em desenvolvimento
+										Projeto de loja virtual que pretende focar na cultura de
+										vendedores imigrantes brasileiros - ainda em desenvolvimento
 									</p>
 									<div class="button">
 										<a
@@ -290,7 +295,10 @@
 
 							<div class="slide swiper-slide">
 								<div class="image">
-									<img src="./assets/img/leonardo-da-vinci.png" alt="Leonardo da Vinci Portfolio" />
+									<img
+										src="./assets/img/leonardo-da-vinci.png"
+										alt="Leonardo da Vinci Portfolio"
+									/>
 								</div>
 								<div class="description">
 									<h4 class="site-subtitle">Imersão CSS</h4>
@@ -307,7 +315,6 @@
 									</div>
 								</div>
 							</div>
-							
 						</div>
 
 						<!-- If we need navigation buttons -->
@@ -345,7 +352,11 @@
 					</div>
 
 					<div class="form">
-						<form action="" method="GET" class="grid">
+						<form
+							action="https://formsubmit.co/jamilligioielli@outlook.com"
+							method="POST"
+							class="grid"
+						>
 							<div class="info-box">
 								<label for="idName">Nome</label>
 								<input
@@ -355,7 +366,7 @@
 									id="idName"
 									autocomplete="off"
 									required
-								/> 
+								/>
 							</div>
 							<div class="info-box">
 								<label for="idEmail">Email</label>
@@ -369,30 +380,26 @@
 								/>
 							</div>
 							<div class="info-box">
-								<label for="idTelefone">Telefone</label>
+								<label for="idCelular">Celular</label>
 								<input
 									class="input"
 									type="tel"
-									name="telefone"
-									id="idTelefone"
+									name="celular"
+									id="idCelular"
 									autocomplete="off"
+									onkeypress="$(this).mask('(00) 0000-00009')"
 								/>
 							</div>
 							<div class="info-box">
-								<label for="idCity">Cidade</label>
+								<label for="idSubject">Assunto</label>
 								<input
 									class="input"
-									list="citys"
-									name="city"
-									id="idCity"
+									type="text"
+									name="_subject"
+									id="idSubject"
 									autocomplete="off"
+									required
 								/>
-								<datalist id="citys">
-									<option value="São Paulo"></option>
-									<option value="Rio de Janeiro"></option>
-									<option value="Campinas"></option>
-									<option value="São Bernado"></option>
-								</datalist>
 							</div>
 							<div class="info-box">
 								<label for="idMensage"> Mensagem </label>
@@ -403,9 +410,9 @@
 									rows="5"
 									size="50"
 								></textarea>
-								
 							</div>
-
+							<input type="hidden" name="_next" value="" />
+							<input type="hidden" name="_captcha" value="false" />
 							<input type="submit" value="Enviar" class="submit-button" />
 						</form>
 					</div>
