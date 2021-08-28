@@ -105,16 +105,16 @@ function activateMenuAtCurrentSection(){
 }
 
 //  Switch button //
-const element = document.body
-const button = document.querySelectorAll("i.switch")
-button.onclick = function () {
-  if (button.classList("icon-toggle-on")) {
-    console.log("blackmode")
+// const element = document.body
+// const button = document.querySelectorAll("i.switch")
+// button.onclick = function () {
+//   if (button.classList("icon-toggle-on")) {
+//     console.log("blackmode")
     
-  } else {
-    console.log('whitemode')
-  }
-}
+//   } else {
+//     console.log('whitemode')
+//   }
+// }
 
 
 
