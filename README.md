@@ -8,6 +8,7 @@ Repositório para aulas de Aplicações Web 1
 #### Atividades
 
 - [Origin Six - Rocketseat](https://jamilligioielli.github.io/AW12021/atividades/A10/)
+- [DevFinaces - Rocketseat](https://jamilligioielli.github.io/AW12021/atividades/A16/)
     
 
 #### Projetos
