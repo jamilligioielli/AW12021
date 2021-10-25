@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?nthl6k');
+  src:  url('fonts/icomoon.eot?nthl6k#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nthl6k') format('truetype'),
+    url('fonts/icomoon.woff?nthl6k') format('woff'),
+    url('fonts/icomoon.svg?nthl6k#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-close:before {
+  content: "\e905";
+}
+.icon-icon-menu:before {
+  content: "\e913";
+}
+.icon-circle-left:before {
+  content: "\e900";
+}
+.icon-left:before {
+  content: "\e900";
+}
+.icon-circle-previous:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-circle-right:before {
+  content: "\e901";
+}
+.icon-right:before {
+  content: "\e901";
+}
+.icon-circle-next:before {
+  content: "\e901";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-download:before {
+  content: "\e902";
+}
+.icon-telegram:before {
+  content: "\e903";
+}
+.icon-envelope:before {
+  content: "\e904";
+}
+.icon-toggle-on:before {
+  content: "\e906";
+}
+.icon-toggle-off:before {
+  content: "\e907";
+}
+.icon-git:before {
+  content: "\e908";
+}
+.icon-mysql:before {
+  content: "\e909";
+}
+.icon-php:before {
+  content: "\e90a";
+}
+.icon-html5:before {
+  content: "\e90b";
+}
+.icon-css3:before {
+  content: "\e90c";
+}
+.icon-javascript:before {
+  content: "\e90d";
+}
+.icon-java:before {
+  content: "\e90e";
+}
+.icon-c:before {
+  content: "\e90f";
+}
+.icon-codepen:before {
+  content: "\e910";
+}
+.icon-github:before {
+  content: "\e911";
+}
+.icon-linkedin:before {
+  content: "\e912";
+}
