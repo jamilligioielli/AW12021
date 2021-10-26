@@ -1,0 +1,164 @@
+/* DEFAULT */
+:root {
+	/* fonts */
+	--title-font-size: 2rem;
+	--subtitle-font-size: 1.7rem;
+
+	--title-font: 'Poppins', sans-serif;
+	--subtitle-font: 'Ubuntu', sans-serif;
+}
+
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+
+html,
+body {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+p {
+	-webkit-font-smoothing: antialiased;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+h1 {
+	font-family: 'Poppins';
+}
+
+#timer h1 {
+	font: 500 6.5rem 'Poppins';
+}
+
+/* BASE */
+body {
+	font: 400 1rem var(--title-font);
+	-webkit-font-smoothing: antialiased;
+}
+
+main .container.card {
+	background-color: rgb(223, 80, 75);
+	color: #ffffff;
+	padding: 2rem;
+	border-radius: 0.625rem;
+	border: 1px solid transparent;
+}
+
+/* Timer */
+.fa-play,
+.fa-redo-alt {
+	color: #ffffff;
+	border: 2px solid transparent;
+	padding: 1.25rem;
+	margin: 1rem;
+	border-radius: 1.2rem;
+}
+
+/* Dynamic class */
+/* Make the message visible */
+.show_message {
+	display: block;
+	padding: 1rem 0;
+	color: #272343;
+	background: #fafafa;
+	border-radius: 0.5rem;
+	transition: 0.5s ease;
+}
+
+/* Buttons */
+.form-control:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: rgb(223, 80, 75) !important;
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem rgba(220, 53, 70, 0.753) !important;
+}
+
+.form-check-input:focus {
+	border-color: rgb(223, 80, 75) !important;
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem rgba(220, 53, 70, 0.753) !important;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+	outline: 0;
+	box-shadow: none !important;
+}
+
+/* FOOTER */
+footer {
+	padding: 2.5rem 1rem;
+}
+
+footer .logo {
+	display: inline-block;
+	margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+	margin-bottom: 0.75rem;
+}
+
+footer i {
+	font-size: 1.5rem;
+}
+
+footer .icons {
+	grid-auto-flow: column;
+	margin-top: 1.5rem;
+}
+
+footer .icons a {
+	transition: 0.3s;
+	display: inline-block;
+	text-decoration: none;
+}
+
+footer .icons a:hover {
+	transform: translateY(-8px);
+	text-shadow: 0px 2px 8px var(--title-color-second);
+}
+
+/* RESPONSIVITY */
+
+@media (max-width: 600px) {
+	#timer h1 {
+		font: 500 2rem 'Poppins';
+	}
+
+	#timer .container.timer .row {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 888px) {
+	#timer h1 {
+		font: 500 4rem 'Poppins';
+	}
+}
+
+@media (min-width: 1200px) {
+	main .container.card {
+		max-width: 50%;
+		max-height: 100%;
+	}
+}
