@@ -69,16 +69,12 @@ main .container.card {
 	border-radius: 1.2rem;
 }
 
-/* Dynamic class */
-/* Make the message visible */
-.show_message {
-	display: block;
-	padding: 1rem 0;
-	color: #272343;
-	background: #fafafa;
-	border-radius: 0.5rem;
-	transition: 0.5s ease;
+/* Todo text */
+.checked{
+	color:gray;
+	text-decoration: line-through!important;
 }
+
 
 /* Buttons */
 .form-control:focus {

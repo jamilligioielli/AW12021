@@ -17,6 +17,15 @@ const Task = {
 
 		App.reload()
 	},
+	taskDone() {
+		if (document.querySelector('#todo li input').checked == true) {
+			document
+				.querySelector('.list-group-item')
+				.style.setProperty('text-decoration', 'line-through', '!important')
+		} else {
+			document.querySelector('#todo li input').checked = false
+		}
+	},
 	remove(index) {
 		Task.all.splice(index, 1)
 		App.reload()
@@ -43,7 +52,7 @@ const DOM = {
 					border-start-0 border-top-0 border-end-0 border-bottom
 					rounded-0
 					mb-2">
-					<div class="d-flex align-items-center">
+					<div class="todoText d-flex align-items-center">
 						<input class="
 								form-check-input
 								me-2
@@ -51,6 +60,7 @@ const DOM = {
 								border-danger
 							"
 							type="checkbox"
+							onchange="Task.taskDone()"
 						/>
 						${task.description}
 					</div>
@@ -64,9 +74,9 @@ const DOM = {
 		</li>
 
 		`
+		
 		return html
 	},
-
 	clearTasks() {
 		DOM.tasksContainer.innerHTML = ''
 	}
@@ -117,6 +127,7 @@ const App = {
 	init() {
 		Task.all.forEach(DOM.addTask)
 		Storage.set(Task.all)
+
 	},
 	reload() {
 		DOM.clearTasks()
