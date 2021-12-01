@@ -4,10 +4,15 @@
 }
 
 h1{
-    font-size:3.5rem;
+    font-size:5rem;
+}
+
+h1:hover{
+    color: #E89242FF;
+    transition: 0.3s;
 }
 
  .card:hover{
-  box-shadow: 5px 10px 18px rgba(241, 238, 238, 0.1);
+  box-shadow: 5px 10px 12px #E89242FF;
   transition: 0.5s;
 }
