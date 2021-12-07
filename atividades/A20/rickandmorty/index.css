@@ -1,0 +1,18 @@
+.row>*{
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+h1{
+    font-size:5rem;
+}
+
+h1:hover{
+    color: #E89242FF;
+    transition: 0.3s;
+}
+
+ .card:hover{
+  box-shadow: 5px 10px 12px #E89242FF;
+  transition: 0.5s;
+}
